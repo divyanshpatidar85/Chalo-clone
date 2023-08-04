@@ -1,0 +1,27 @@
+import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+class BusPassWalaWidgit extends StatelessWidget {
+  BusPassWalaWidgit({
+    super.key,
+   required this.Titlee,
+    required this.iconn,
+  });
+  FaIcon iconn;
+  String Titlee;
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 60,
+      width: 195,
+      decoration:BoxDecoration(
+        border:Border.all(color:Colors.black),
+        borderRadius:BorderRadius.circular(10),
+      ),
+      child:ListTile(
+        leading:iconn,
+        title:Text(Titlee),
+        onTap:(){},
+      ),
+    );
+  }
+}
